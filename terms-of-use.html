@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Terms of Use | High-Flyer</title>
+  <script>
+    (function() {
+      // 初始化页面
+      var os = function() {
+        var ua = navigator.userAgent,
+          isWindowsPhone = /(?:Windows Phone)/.test(ua),
+          isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+          isAndroid = /(?:Android)/.test(ua),
+          isFireFox = /(?:Firefox)/.test(ua),
+          isChrome = /(?:Chrome|CriOS)/.test(ua),
+          isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),
+          isiPhone = /(?:iPhone)/.test(ua) && !isTablet,
+          isPc = !isiPhone && !isAndroid && !isSymbian;
+        return {
+          isTablet: isTablet,
+          isiPhone: isiPhone,
+          isAndroid: isAndroid,
+          isPc: isPc
+        };
+      }();
+
+      var _width = ((document.documentElement.clientWidth > 750) ? 750 : document.documentElement.clientWidth);
+      document.documentElement.style.fontSize = _width / 7.5 + "px";
+
+      if (os.isPc) {
+        document.documentElement.className = "pc-device";
+      }
+
+      if (os.isiPhone) {
+        document.documentElement.className = "ios-device";
+
+        if ((screen.availHeight == 812) && (screen.availWidth == 375)) {
+          document.documentElement.className = "ios-device iphonex";
+        }
+        if ((screen.availHeight == 896) && (screen.availWidth == 414)) {
+          document.documentElement.className = "ios-device iphonex";
+        }
+      }
+    })(window);
+  </script>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body id="page-top" class="body terms">
+  <div class="container">
+    <div class="header">
+      <a href="#" class="logo">
+        <img src="./image/logo-en.png" width="1rem" alt="">
+      </a>
+    </div>
+    <div class="content">
+      <div class="sidebar">
+        <ul>
+          <li><a class="" target="_blank" href="./index.html">HOME</a></li>
+          <li><a href="javascript:;">ABOUT</a></li>
+          <li><a href="javascript:;">INVESTORS</a></li>
+          <li><a href="javascript:;">CAREERS</a></li>
+          <li><a href="javascript:;">NEWS</a></li>
+          <li><a  target="_blank" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="wrap">
+          <div class="paragraph">
+            <p>TERMS OF USE</p>
+            <p>The information contained on this site is proprietary information belonging to High-Flyer Capital Management (Hong Kong) Limited ("High-Flyer"). This information may not be reproduced, in whole or in part, without the written express consent of High-Flyer. The information at this site is protected under the applicable copyright laws in Hong Kong SAR and other territories and countries. Unauthorized retransmission, redistribution or other reproduction or modification of information contained in this site is prohibited and may be a violation of laws, including trademark or copyright laws and could subject the user to legal action. This is not a solicitation to buy or an offer to sell interest in our funds, such offers will be made only by distribution of a private placement memorandum and only in compliance with applicable law.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="content">
+        <div class="copyright">Copyright © 2019, High-Flyer Capital Management (Hong Kong) Limited</div>
+        <div class="policy-terms">
+          <a class="link" href="./privacy-policy.html" target="_blank">Privacy Policy</a>
+          |
+          <a class="link" href="./terms-of-use.html" target="_blank">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
