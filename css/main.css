@@ -226,5 +226,19 @@ body {
 /* terms-of-use page */
 .terms .main .wrap {
   background: url('../image/terms.png') no-repeat;
+  line-height: 1.5;
+  overflow-y: scroll;
   font-size: 13px;
+  height: 6rem;
+  padding-bottom: 40px;
+}
+
+.terms .main .wrap p {
+  margin-bottom: 15px;
+}
+
+.terms .main .wrap h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
