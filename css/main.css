@@ -228,3 +228,51 @@ body {
   background: url('../image/terms.png') no-repeat;
   font-size: 13px;
 }
+
+/* 欺诈警示样式 */
+.fraud-alert {
+  background-color: #fff8e1;
+  border: 2px solid #ffd54f;
+  border-radius: 4px;
+  margin: 10px auto;
+  padding: 15px;
+  max-width: 1200px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.alert-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #e65100;
+  margin-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ffd54f;
+  padding-bottom: 8px;
+}
+
+.alert-message p {
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.alert-message p:first-child {
+  color: #d32f2f; /* 英文红色突出 */
+  font-weight: bold;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .fraud-alert {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .alert-title {
+    font-size: 16px;
+  }
+
+  .alert-message p {
+    font-size: 13px;
+  }
+}
